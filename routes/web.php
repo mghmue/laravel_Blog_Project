@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 Route::get('/intros', [App\Http\Controllers\IntroController::class, 'show']);
 Route::get('/test', [App\Http\Controllers\IntroController::class, 'testfun']);
+
+
 Route::get('/about', [App\Http\Controllers\TemplateController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\TemplateController::class, 'contact']);
 Route::get('/post', [App\Http\Controllers\TemplateController::class, 'post']);
